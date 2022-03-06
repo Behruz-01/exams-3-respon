@@ -1,0 +1,219 @@
+
+.hero{
+    padding-top:150px;
+    
+}
+
+
+
+.hero__box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero__name{
+    display: flex;
+    margin-top: 20px;
+}
+
+.hero__surname{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.hero__surname--mod{
+    margin-left: 30px;
+}
+
+
+.hero__surname--left{
+    margin-left: 35px;
+}
+
+.hero__surname--third{
+    margin-left: 30px;
+}
+
+
+
+.hero__label{
+    margin-bottom: 10px;
+    font-family: Manrope;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 23px;
+/* identical to box height, or 144% */
+
+
+color: #FFFFFF;
+
+}
+
+
+
+
+
+.hero__input{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 393px;
+    height: 50px;
+    padding-left: 15px;
+    
+}
+
+.hero__input--mod{
+    width: 288px;
+    height: 50px;
+    // margin-left: 30px;
+}
+
+.hero__input--left{
+    width: 338px;
+}
+
+.hero__input--second{
+    width: 338px;
+    
+    // margin-left: 35px;
+}
+
+
+.hero__input--bottom{
+    width: 287px;
+}
+
+.hero__input--right{
+    width: 394px;
+    // margin-left: 30px;
+}
+
+
+.hero__input--big{
+    width: 711px;
+    height: 168px;
+    margin-left: 0px;
+}
+
+.hero__button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #0040DD;
+    padding: 10px 42px 10px 15px;
+    border-radius: 50px;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 75px;
+        background-image: url("../images/strelka.svg");
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.hero__boxing{
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+
+
+
+
+
+
+.hero__title{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+    color: #FFFFFF;
+}
+
+
+
+
+
+.hero__text{
+
+    
+font-family: Manrope;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+color: #FFFFFF;
+
+opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:426px){
+
+        .hero{
+            padding-top: 30px;
+        }
+
+        .hero__box{
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+
+
+        .hero__boxing{
+            width: 340px;
+            padding: 84px 19px;
+            
+        }
+
+
+        .hero__name{
+            width: 343px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+       
+
+
+        .hero__surname{
+            display: block;
+            margin-left: auto;
+        }
+
+        .hero__input{
+            width: 343px;
+        }
+
+
+        .hero__button{
+            display: block;
+            width: 100%;
+        }
+        
+}

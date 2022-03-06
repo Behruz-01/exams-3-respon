@@ -1,0 +1,150 @@
+
+
+
+
+
+.head__box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+
+
+.head__boxing{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.navbar__list{
+    display: flex;
+    list-style: none;
+}
+
+
+.navbar__item + .navbar__item{
+    margin-left: 35px;
+}
+
+
+.navbar__link{
+    text-decoration: none;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    &:hover{
+        color: white;
+        opacity: 1;
+    }
+}
+
+
+.head__image{
+    display: none;
+}
+
+
+
+.head__button{
+    margin-left: 60px;
+    background-color: transparent;
+    width: 99px;
+    // height: 35px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 75px;
+    
+}
+   
+
+
+.head__text + .head__text{
+    margin-left: 10px;
+}
+
+
+.head__text{
+    color: #FFFFFF;
+    opacity: 0.3;
+    &:hover{
+        color: white;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:426px){
+
+    body{
+        background-image: none;
+        
+        background-color:rgba(0, 0, 0, 0.425);
+        
+    }
+
+    .head__box{
+        padding: 22px 24px;
+        position: relative;
+        display: flex;
+        
+    }
+
+
+    
+    .head__image{
+        display: block;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 30px;
+    }
+
+    .navbar__list{
+        display: inline-block;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 68px;
+        left: 0;
+        width: 327px;
+        height: 265px;
+        align-items: center;
+        flex-direction: column;
+        padding: 32px 0;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 4px;
+        
+    }
+    
+    .head__button{
+        display: none;
+    }
+
+
+    .head__text{
+        display: none;
+    }
+
+
+    
+}
+
+
+
+
